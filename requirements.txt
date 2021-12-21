@@ -9,5 +9,8 @@ pickleshare==0.7.5
 prompt-toolkit==3.0.24
 psycopg2-binary==2.9.2
 Pygments==2.10.0
+PyQt5==5.15.6
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.9.0
 traitlets==5.1.1
 wcwidth==0.2.5
