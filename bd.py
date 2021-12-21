@@ -12,6 +12,7 @@ class Funcionario:
 class BancoDados:
     def __init__(self) -> None:
         self.registros = []
+        self.listar()
 
     def salvar(self, funcionario : Funcionario):
         with open('banco.txt', 'a') as arquivo:
@@ -30,22 +31,6 @@ class BancoDados:
         funcionario.sexo = campos[2]
         return funcionario
     
-f1 = Funcionario()
-f1.nome = 'Osenias'
-f1.salario = 1000
-f1.sexo = 'M'
-
-f2 = Funcionario()
-f2.nome = 'Osenias'
-f2.salario = 1000
-f2.sexo = 'M'
-
-banco = BancoDados()
-# banco.salvar(f1)
-# banco.salvar(f2)
-banco.listar()
-print(banco.registros)
-
 
 
 
